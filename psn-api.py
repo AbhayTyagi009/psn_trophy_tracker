@@ -1,8 +1,8 @@
 import os
 
 import json
-import urllib.request
 import urllib.parse
+import urllib.request
 
 
 class Auth:
