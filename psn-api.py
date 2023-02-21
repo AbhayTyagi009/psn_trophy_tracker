@@ -99,7 +99,7 @@ class Auth:
 		url = self.CODE_URL + '?' + data
 		response = os.popen('curl -s -I -H \'Cookie: npsso='+self.npsso+'\' -X GET \''+url+'\' | grep -Fi X-NP-GRANT-CODE').readline()
 		self.grant_code = self.find_between(response, 'X-NP-GRANT-CODE', '\n')
-		if(self.grant_code is ''):
+		if(self.grant_code == ''):
 			error = {
 				'error': 'invalid_np_grant',
 				'error_description': 'Failed to obtain X-NP-GRANT-CODE',
