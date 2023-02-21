@@ -1,6 +1,6 @@
 import json
 import requests
-from User import User
+from api.User import User
 
 class Friend:
 
