@@ -1,3 +1,5 @@
-# psn_trophy_tracker
+# PSN Trophy Tracker
 
-adapted from https://github.com/mgp25/psn-api [converted python2 to python3]
+Adapted from https://github.com/mgp25/psn-api [converted python2 to python3]
+
+Work in Progress
