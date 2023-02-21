@@ -1,8 +1,8 @@
-import simplejson
+import os
+
 import json
 import urllib.request
 import urllib.parse
-import os
 
 
 class Auth:
