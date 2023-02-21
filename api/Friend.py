@@ -65,6 +65,7 @@ class Friend:
 		}
 		response = requests.remove(self.USERS_URL+onlineId+'/friendList/'+psn_id, headers=header)
 
+
 	def get_info(self, psn_id):
 		endpoint = '/profile2?fields=npId,onlineId,avatarUrls,plus,aboutMe,languagesUsed,trophySummary(@default,progress,earnedTrophies),isOfficiallyVerified,personalDetail(@default,profilePictureUrls),personalDetailSharing,personalDetailSharingRequestMessageFlag,primaryOnlineStatus,presences(@titleInfo,hasBroadcastData),friendRelation,requestMessageFlag,blocking,mutualFriendsCount,following,followerCount,friendsCount,followingUsersCount&avatarSizes=m,xl&profilePictureSizes=m,xl&languagesUsedLanguageSet=set3&psVitaTitleIcon=circled&titleIconSize=s'
 		url = self.USERS_URL+psn_id+endpoint
